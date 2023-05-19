@@ -65,3 +65,5 @@
   62 cat hum.txt 
   63 history 
 ```
+### task -1 create a directory structure
+<src img='h3'>
