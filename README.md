@@ -66,4 +66,4 @@
   63 history 
 ```
 ### task -1 create a directory structure
-<img src='h3'>
+<img src='task_file_system.jpg'>
