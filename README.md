@@ -74,13 +74,13 @@
 command : vi <filename>
 eg : vi testfile
 
-* MODES:
+** MODES:
 vi has two different modes:
 - Command Mode:
 In Command Mode, the characters you type are interpreted
 as commands. For example: yy - copy
 
-- Insert Mode:
+** Insert Mode:
 In insert MOde, everything you type is inserted into the file as text
 ** COPY: 
 - yy will copy the entire line.
@@ -98,12 +98,12 @@ In insert MOde, everything you type is inserted into the file as text
 :q quits without save
 :q! force quit
 
-**SEARCHING:
+** SEARCHING:
 cmd:  --> /{letter}  
 FOR exmaple /ink  -- searches 'ink' a in file.
 - n  repeats search in same direction
 - N repeats search in opposite direction
 
-** UNDO AND REDO:
+** UNDO :
 - press 'u'   for  undo last change
 ```
