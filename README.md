@@ -107,3 +107,6 @@ FOR exmaple /ink  -- searches 'ink' a in file.
 ** UNDO :
 - press 'u'   for  undo last change
 ```
+
+## something more :
+https://github.com/Gaur95/Devops_cloud_batch/blob/f40aff8a248f54772896dd63a454459260749464/basic_linux.pdf
