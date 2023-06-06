@@ -140,5 +140,45 @@ root@5f8b8f6f5e0b:/# hgdavh >>/tmp/success.txt
 bash: hgdavh: command not found
 root@5f8b8f6f5e0b:/# hgdavh 2>>/tmp/error.txt
 ```
+## 6 june history
+```
+id
+   18  cat /etc/passwd
+   19  adduser akash1
+   20  cat /etc/passwd
+   21  tail -n 1 /etc/passwd
+   22  history 
+   23  id akash1
+   24  su - akash1
+   25  passwd akash1
+   26  passwd 
+   27  ls
+   28  ls -l
+   29  cat  /etc/group
+   30  groupadd devops
+   31  tail -n 1 /etc/group
+   32  usermod --help
+   33  usermod -aG devops akash 
+   34  tail -n 1 /etc/group
+   35  userdel devops akash
+   36  deluser devops akash
+   37  deluser akash devops
+   38  su - akash
+   39  su - akash1
+   40  cd /home/akash1/
+   41  ls
+   42  ls -l
+   43  chown root:devops hello
+   44  ls -l
+   45  history 
+   46  userdel --help
+   47  userdel -r akash1
+   48  tail -n 1 /etc/passwd
+   49  userdel -r akash
+   50  tail -n 1 /etc/passwd
+   51  groupdel devops
+   52  tail -n 1 /etc/group
+   53  history 
+```
 
 
