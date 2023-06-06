@@ -110,3 +110,8 @@ FOR exmaple /ink  -- searches 'ink' a in file.
 
 ## something more :
 https://github.com/Gaur95/Devops_cloud_batch/blob/f40aff8a248f54772896dd63a454459260749464/basic_linux.pdf
+
+## Input Output Redirection
+https://github.com/Gaur95/Devops_cloud_batch/blob/master/I_O%20redirection.pdf
+
+
