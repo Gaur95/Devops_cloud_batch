@@ -113,5 +113,32 @@ https://github.com/Gaur95/Devops_cloud_batch/blob/f40aff8a248f54772896dd63a45445
 
 ## Input Output Redirection
 https://github.com/Gaur95/Devops_cloud_batch/blob/master/I_O%20redirection.pdf
+## 5 june task solution
+```
+oot@5f8b8f6f5e0b:/# history 
+    1  history 
+    2  docker ps
+    3  history 
+    4  lscpu 
+    5  lscpu | head -n 6
+    6  lscpu | head -n 6 | tail -n 3
+    7  history 
+root@5f8b8f6f5e0b:/# lscpu | head -n 6 | tail -n 3 >/tmp/lscpu.txt
+root@5f8b8f6f5e0b:/# cat /tmp/lscpu.txt 
+Byte Order:                      Little Endian
+CPU(s):                          4
+On-line CPU(s) list:             0-3
+root@5f8b8f6f5e0b:/# hgdavh >>/tmp/success.txt 2>>/tmp/error.txt
+root@5f8b8f6f5e0b:/# cat /tmp/error.txt 
+bash: hgdavh: command not found
+root@5f8b8f6f5e0b:/# date >>/tmp/success.txt 2>>/tmp/error.txt
+root@5f8b8f6f5e0b:/# cat /tmp/error.txt 
+bash: hgdavh: command not found
+root@5f8b8f6f5e0b:/# cat /tmp/success.txt 
+Tue Jun  6 08:05:56 UTC 2023
+root@5f8b8f6f5e0b:/# hgdavh >>/tmp/success.txt
+bash: hgdavh: command not found
+root@5f8b8f6f5e0b:/# hgdavh 2>>/tmp/error.txt
+```
 
 
