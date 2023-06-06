@@ -180,5 +180,7 @@ id
    52  tail -n 1 /etc/group
    53  history 
 ```
+## task 
+<img src='task2.jpg'>
 
 
