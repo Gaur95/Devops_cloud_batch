@@ -189,5 +189,113 @@ https://github.com/Gaur95/Devops_cloud_batch/blob/master/permission.pdf
 
 ## task 
 <img src='task2.jpg'>
+## 7 june history
+```
+24  cat /etc/passwd
+   25  cat /etc/group
+   26  addgroup hello
+   27  cat /etc/group
+   28  usermod -aG hello u1
+   29  cat /etc/group
+   30  id u1
+   31  usermod -aG hello u2
+   32  tail -n 1 /etc/group
+   33  history 
+   34  touch demo.txt
+   35  ls -l
+   36  chown u1:hello demo.txt 
+   37  ls -l
+   38  history 
+   39  ls
+   40  ls -ld hello
+   41  chmod 777 hello
+   42  ls -ld hello
+   43  mkdir test
+   44  ls -ld test
+   45  touch testfile.txt
+   46  ls -l testfile.txt 
+   47  umask 
+   48  umask 0077
+   49  umask 
+   50  touch test1
+   51  mkdir testdir
+   52  ls -l
+   53  ls -lrt
+   54  ls --help
+   55  ls -lt
+   56  ls -lrt
+   57  which date
+   58  cd /usr/bin/
+   59  ls
+   60  ls -l date
+   61  chmod 744 date
+   62  ls -l date
+   63  chmod 644 date
+   64  ls -l date
+   65  date
+   66  history 
+   67  date
+   68  chmod +x /usr/bin/date 
+   69  date
+   70  alias time=date
+   71  time
+   72  date
+   73  time
+   74  alias baby=date
+   75  baby 
+   76  baby
+   77  cd ~
+   78  pwd
+   79  ls -a
+   80  vim .bashrc 
+   81  date
+   82  baby
+   83  pwd
+   84  cd /root/
+   85  pwd
+   86  vim .bashrc 
+   87  baby
+   88  alias
+   89  unalias baby
+   90  unalias ls
+   91  alias 
+   92  ls
+   93  ls --color=auto
+   94  ls
+   95  alias cl='ls --color=auto'
+   96  ls
+   97  cl
+   98  <<x
+   99  var
+  100  local variable - in a function
+  101  globle variable -- anywhere
+  102  shell vailable ---
+  103  x
+  104  hello=world
+  105  echo hello
+  106  echo $hello
+  107  echo $HOME
+  108  echo $SHELL
+  109  env
+  110  export hello=world
+  111  env
+  112  env | grep hello
+  113  tar --help
+  114  vim test22
+  115  yes "hello world">test22
+  116  ls -l test22 
+  117  ls -lh test22 
+  118  echo "ky cool hai hum" > test33
+  119  tar -cf hum.tar test22 test33 
+  120  ls
+  121  ls -lh
+  122  tar --help
+  123  ls 
+  124  rm -rf test33 test22
+  126  tar -xf hum.tar
+  128  rm -rf hum.tar 
+  129  tar -czf humc.tar test22
+  130  ls -lh humc.tar 
+```
 
 
