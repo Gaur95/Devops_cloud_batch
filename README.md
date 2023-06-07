@@ -180,6 +180,13 @@ id
    52  tail -n 1 /etc/group
    53  history 
 ```
+## User managment
+https://github.com/Gaur95/Devops_cloud_batch/blob/master/user_managment.pdf
+
+## permission
+https://github.com/Gaur95/Devops_cloud_batch/blob/master/permission.pdf
+
+
 ## task 
 <img src='task2.jpg'>
 
