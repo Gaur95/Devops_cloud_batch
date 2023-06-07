@@ -189,6 +189,7 @@ https://github.com/Gaur95/Devops_cloud_batch/blob/master/permission.pdf
 
 ## task 
 <img src='task2.jpg'>
+
 ## 7 june history
 ```
 24  cat /etc/passwd
@@ -296,6 +297,7 @@ https://github.com/Gaur95/Devops_cloud_batch/blob/master/permission.pdf
   128  rm -rf hum.tar 
   129  tar -czf humc.tar test22
   130  ls -lh humc.tar 
+
 ```
 
 
