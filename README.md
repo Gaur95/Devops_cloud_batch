@@ -316,3 +316,34 @@ https://github.com/Gaur95/Devops_cloud_batch/blob/master/permission.pdf
 + CTRL+A or HOME ----		Moves the cursor to the start of a line.	 
 + CTRL+E or END	----	Moves the cursor to the end of a line.
 
+# ssh
+```
+ubuntu@ip-172-31-85-46:~$ w
+ 06:02:22 up 26 min, 14 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ubuntu   pts/0    157.38.254.164   06:00   46.00s  0.06s  0.02s sshd: ubuntu [priv]
+ubuntu   pts/1    18.206.107.29    05:46   15:58   0.03s  0.03s -bash
+ubuntu   pts/2    157.38.128.214   05:47    7:10   0.03s  0.03s -bash
+ubuntu   pts/3    157.38.128.164   05:57    1:50   0.04s  0.01s sshd: ubuntu [priv]
+ubuntu   pts/4    157.38.128.164   05:47    2:14   0.04s  0.02s sshd: ubuntu [priv]
+ubuntu   pts/5    157.38.128.164   05:47   15.00s  0.07s  0.01s sshd: ubuntu [priv]
+ubuntu   pts/6    152.58.72.13     05:47   22.00s  0.05s  0.05s -bash
+ubuntu   pts/7    106.207.168.207  06:02    6.00s  0.02s  0.00s w
+ubuntu   pts/8    157.38.129.109   05:49    2.00s  0.04s  0.01s vim sshd_config
+
+akash@sky:~$ ssh ubuntu@54.166.54.43 
+ubuntu@54.166.54.43's password: 
+ifconfig 
+  191  ifconfig eth0
+  192  ifconfig eth0 192.168.9.10
+  193  cat /etc/services
+  194  cat /etc/service
+  195  ssh
+  196  apt install openssh-client
+  197  apt install openssh-server
+  198  ssh
+  199  apt install openssh-server
+  200  apt update
+  201  apt install openssh-server
+```
+
