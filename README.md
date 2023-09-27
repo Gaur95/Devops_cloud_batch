@@ -346,4 +346,81 @@ ifconfig
   200  apt update
   201  apt install openssh-server
 ```
+### 27sept history
+```
+1  date
+    2  cd /
+    3  pwd
+    4  ls
+    5  ls -l
+    6  clear
+    7  ls
+    8  date 
+    9  which date
+   10  cd /bin
+   11  pwd
+   12  ls 
+   13  echo hello
+   14  echo PATH
+   15  echo $PATH
+   16  cat /etc/shells
+   17  chsh
+   18  cd ..
+   19  ls
+   20  ls -l sbin
+   21  cd /usr/sbin/
+   22  cd ..
+   23  ls -l sbin
+   24  ls -ld sbin
+   25  cd ..
+   26  ls
+   27  cd 
+   28  pwd
+   29  vim 
+   30  apt update && apt install vim 
+   31  vim xyz.txt
+   32  cat xyz.txt 
+   33  vim xyz.txt 
+   34  cta xyz.txt 
+   35  cat xyz.txt 
+   36  alias date='baby'
+   37  baby
+   38  alias baby='date'
+   39  baby
+   40  alias baby='date'
+   41  baby
+   42  unalias baby
+   43  unalias date
+   44  alias baby='date'
+   45  baby
+   46  ls
+   47  ls -a
+   48  pwd
+   49  cal 
+   50  date
+   51  date >tym
+   52  cat tym 
+   53  date >cool 
+   54  cat cool 
+   55  cal >yyy
+   56  cal 2>yyy
+   57  cat yyy 
+   58  date >>yyy
+   59  cat yyy
+   60  ip a
+   61  lscpu 
+   62  lscpu  | grep CPU
+   63  lscpu > test.txt
+   64  head test.txt 
+   65  tail test.txt 
+   66  head -n 2 test.txt 
+   67  tail -n 2 test.txt 
+   68  lscpu | head
+   69  lscpu | head -2
+   70  lscpu | tail -2
+   71  less test.txt 
+   72  apt install less
+   73  less test.txt 
+   74  history 
+```
 
