@@ -423,4 +423,98 @@ ifconfig
    73  less test.txt 
    74  history 
 ```
+### 29sept history
+```
+tail -n 3 /etc/group 
+  808  useradd test
+  809  adduser test
+  810  sudo useradd test
+  811  sudo adduser test1
+  812  tail -1 /etc/passwd
+  813  su - test1
+  814  pwd
+  815  su  test1
+  816  su - test1
+  817  sudo userdel -r test1
+  818  userdel --help
+  819  suod 0i 
+  820  sudo -i 
+  821  whoami 
+  822  sudo whoami 
+29/09/23 14:13:05 groupadd test33
+  933  29/09/23 14:13:22 tail -2 /etc/group
+  934  29/09/23 14:14:51 cat /etc/group
+  935  29/09/23 14:16:50 usermod --help
+  936  29/09/23 14:18:51 usermod -aG test33 ak11
+  937  29/09/23 14:19:12 tail -2 /etc/group
+  938  29/09/23 14:22:26 useradd cool
+  939  29/09/23 14:22:37 useradd baby
+  940  29/09/23 14:22:52 tail -3 /etc/group
+  941  29/09/23 14:23:09 tail -3 /etc/passwd
+  942  29/09/23 14:25:47 tail -3 /etc/group
+  943  29/09/23 14:26:14 userdel ak11 test33
+  944  29/09/23 14:26:28 deluser ak11 test33
+  945  29/09/23 14:26:44 tail -3 /etc/group
+  946  29/09/23 14:27:36 su - test33
+  947  29/09/23 14:27:44 su - baby 
+  948  29/09/23 14:29:06 ls -l 
+  949  29/09/23 14:34:23 cd /bin/
+  950  29/09/23 14:34:25 ls
+  951  29/09/23 14:34:27 ls -l
+  952  29/09/23 14:36:09 cd
+  953  29/09/23 14:36:43 touch chhotisi
+  954  29/09/23 14:36:50 ls -l chhotisi 
+  955  29/09/23 14:37:53 su - baby 
+  956  29/09/23 14:43:15 ls -ld /root
+  957  29/09/23 14:44:32 chmod go+rwx /root
+  958  29/09/23 14:44:35 ls -ld /root
+  959  29/09/23 14:44:55 su - baby
+  960  29/09/23 14:47:59 chmod g+w /root/chhotisi 
+  961  29/09/23 14:48:01 su - baby
+  962  29/09/23 14:50:33 test33
+  963  29/09/23 14:50:54 tail -3 /etc/group
+  964  29/09/23 14:51:42 chown -m root:test33 /root/chhotisi 
+  965  29/09/23 14:51:50 chown root:test33 /root/chhotisi 
+  966  29/09/23 14:52:13 ls -l /root/chhotisi 
+  967  29/09/23 14:53:01 usermod -aG test33 baby
+  968  29/09/23 14:53:12 tail -3 /etc/group
+  969  29/09/23 14:53:23 su - baby
+  970  29/09/23 14:55:35 vim chhotisi 
+  971  29/09/23 14:57:16 ls -l chhotisi 
+  972  29/09/23 14:57:36 chmod u+x chhotisi 
+  973  29/09/23 14:57:47 ./chhotisi
+  974  29/09/23 14:58:48 ls -l chhotisi 
+  975  29/09/23 15:08:56 date
+  976  29/09/23 15:14:27 ls -l /usr/bin/date
+  977  29/09/23 15:15:02 chmod +x /usr/bin/date 
+  978  29/09/23 15:15:03 ls -l /usr/bin/date
+  979  29/09/23 15:15:17 chmod +r /usr/bin/date 
+  980  29/09/23 15:15:18 ls -l /usr/bin/date
+  981  29/09/23 15:16:20 date
+  982  29/09/23 15:18:08 ls -l /usr/bin/date
+  983  29/09/23 15:18:39 chmod 111 /usr/bin/date
+  984  29/09/23 15:18:41 ls -l /usr/bin/date
+  985  29/09/23 15:19:02 chmod 444 /usr/bin/date
+  986  29/09/23 15:19:04 ls -l /usr/bin/date
+  987  29/09/23 15:19:18 chmod 555 /usr/bin/date
+  988  29/09/23 15:19:20 ls -l /usr/bin/date
+  989  29/09/23 15:19:31 chmod 550 /usr/bin/date
+  990  29/09/23 15:19:32 ls -l /usr/bin/date
+  991  29/09/23 15:19:41 chmod 000 /usr/bin/date
+  992  29/09/23 15:19:42 ls -l /usr/bin/date
+  993  29/09/23 15:19:52 chmod 777 /usr/bin/date
+  994  29/09/23 15:19:53 ls -l /usr/bin/date
+  995  29/09/23 15:20:22 chmod 745 /usr/bin/date
+  996  29/09/23 15:20:23 ls -l /usr/bin/date
+  997  29/09/23 15:21:24 umask 
+  998  29/09/23 15:23:20 touch demo
+  999  29/09/23 15:23:25 ls -l demo
+ 1000  29/09/23 15:23:53 mkdir demo1
+ 1001  29/09/23 15:23:57 ls -ld demo1
+ 1002  29/09/23 15:25:46 umask 222
+ 1003  29/09/23 15:25:49 umask 
+ 1004  29/09/23 15:25:59 touch new1122
+ 1005  29/09/23 15:26:04 ls -l new1122 
+
+```
 
