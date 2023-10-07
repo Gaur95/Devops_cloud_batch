@@ -517,4 +517,5 @@ tail -n 3 /etc/group
  1005  29/09/23 15:26:04 ls -l new1122 
 
 ```
-
+### 7oct webserver
+<img src='7oct.jpg'>
