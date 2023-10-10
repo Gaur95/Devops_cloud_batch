@@ -519,3 +519,141 @@ tail -n 3 /etc/group
 ```
 ### 7oct webserver
 <img src='7oct.jpg'>
+
+## 10oct partitions
+```
+ubuntu@ip-172-31-45-212:~$ lsblk
+NAME     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop0      7:0    0 24.4M  1 loop /snap/amazon-ssm-agent/6312
+loop1      7:1    0 55.7M  1 loop /snap/core18/2745
+loop2      7:2    0 63.5M  1 loop /snap/core20/1891
+loop3      7:3    0 91.9M  1 loop /snap/lxd/24061
+loop4      7:4    0 53.2M  1 loop /snap/snapd/19122
+xvda     202:0    0    8G  0 disk 
+├─xvda1  202:1    0  7.9G  0 part /
+├─xvda14 202:14   0    4M  0 part 
+└─xvda15 202:15   0  106M  0 part /boot/efi
+xvdf     202:80   0   10G  0 disk 
+ubuntu@ip-172-31-45-212:~$ mkdir /opt/new
+mkdir: cannot create directory ‘/opt/new’: Permission denied
+ubuntu@ip-172-31-45-212:~$ sudo mkdir /opt/new
+ubuntu@ip-172-31-45-212:~$ sudo -i 
+root@ip-172-31-45-212:~# mount /dev/xvdf /opt/new/
+root@ip-172-31-45-212:~# cd /opt/
+root@ip-172-31-45-212:/opt# ls
+new
+root@ip-172-31-45-212:/opt# cd new/
+root@ip-172-31-45-212:/opt/new# ls
+A  B  C  D  lost+found
+root@ip-172-31-45-212:/opt/new# lblk
+
+Command 'lblk' not found, did you mean:
+
+  command 'lsblk' from deb util-linux (2.34-0.1ubuntu9.3)
+
+Try: apt install <deb name>
+
+root@ip-172-31-45-212:/opt/new# lsblk
+NAME     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop0      7:0    0 24.4M  1 loop /snap/amazon-ssm-agent/6312
+loop1      7:1    0 55.7M  1 loop /snap/core18/2745
+loop2      7:2    0 63.5M  1 loop /snap/core20/1891
+loop3      7:3    0 91.9M  1 loop /snap/lxd/24061
+loop4      7:4    0 53.2M  1 loop /snap/snapd/19122
+xvda     202:0    0    8G  0 disk 
+├─xvda1  202:1    0  7.9G  0 part /
+├─xvda14 202:14   0    4M  0 part 
+└─xvda15 202:15   0  106M  0 part /boot/efi
+xvdf     202:80   0   10G  0 disk /opt/new
+root@ip-172-31-45-212:/opt/new# fdisk /dev/xvdf 
+
+Welcome to fdisk (util-linux 2.34).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+The old ext4 signature will be removed by a write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0x8b792b79.
+
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1-4, default 1): 
+First sector (2048-20971519, default 2048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-20971519, default 20971519): +2G
+
+Created a new partition 1 of type 'Linux' and of size 2 GiB.
+
+Command (m for help): p
+Disk /dev/xvdf: 10 GiB, 10737418240 bytes, 20971520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x8b792b79
+
+Device     Boot Start     End Sectors Size Id Type
+/dev/xvdf1       2048 4196351 4194304   2G 83 Linux
+
+Command (m for help): m
+
+Help:
+
+  DOS (MBR)
+   a   toggle a bootable flag
+   b   edit nested BSD disklabel
+   c   toggle the dos compatibility flag
+
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+
+  Misc
+   m   print this menu
+   u   change display/entry units
+   x   extra functionality (experts only)
+
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Syncing disks.
+
+root@ip-172-31-45-212:/opt/new# lsblk 
+NAME     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop0      7:0    0 24.4M  1 loop /snap/amazon-ssm-agent/6312
+loop1      7:1    0 55.7M  1 loop /snap/core18/2745
+loop2      7:2    0 63.5M  1 loop /snap/core20/1891
+loop3      7:3    0 91.9M  1 loop /snap/lxd/24061
+loop4      7:4    0 53.2M  1 loop /snap/snapd/19122
+xvda     202:0    0    8G  0 disk 
+├─xvda1  202:1    0  7.9G  0 part /
+├─xvda14 202:14   0    4M  0 part 
+└─xvda15 202:15   0  106M  0 part /boot/efi
+xvdf     202:80   0   10G  0 disk /opt/new
+└─xvdf1  202:81   0    2G  0 part 
+root@ip-172-31-45-212:/opt/new#
+```
