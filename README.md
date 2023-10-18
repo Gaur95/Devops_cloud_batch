@@ -14,6 +14,11 @@ Step by Step create Ubuntu Ec2 Instance on Amazon Cloud (AWS)
 11. Connect to your Amazon Ec2 Instance
 ```
 
+# load balancer
+https://github.com/Gaur95/Devops_cloud_batch/blob/55d7d754162048df940dbbf47082d411368cb261/elb.pdf
+
+# IAM user
+https://github.com/Gaur95/Devops_cloud_batch/blob/55d7d754162048df940dbbf47082d411368cb261/iam.pdf
 
 # AWS cloudwatch 
 ## configure systemlevel logs (apache logs )
