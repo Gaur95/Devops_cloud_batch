@@ -27,5 +27,5 @@ curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setu
 ```
 ## RUN that python code
 ```
-sudo python2.7 ./awslogs-agent-setup.py --region us-east-1
+sudo python2.7 ./awslogs-agent-setup.py --region ap-south-1
 ```
