@@ -35,3 +35,4 @@ docker version
   850  docker run -itd --name ak -p 1122:80 myapache bash
 
 ```
+<img src='27oct.jpg'>
