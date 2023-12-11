@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mydeploy
-spec:
-  replicas: 2
+spec: 
+  replicas: 10
   selector:
     matchLabels:
       drink: tea
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myappc
-        image: httpd
+        image: nginx
         ports:
         - containerPort: 80
