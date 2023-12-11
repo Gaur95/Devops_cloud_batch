@@ -141,3 +141,4 @@ datadog-agent-cluster-agent   1/1     1            1           15d
 mydeploy                      10/10   10           10          26m
 ```
 <img src='svc.png'>
+<img src='kubernetes.pdf'>
