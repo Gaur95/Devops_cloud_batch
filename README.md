@@ -42,3 +42,18 @@ myapp   1/1     Running           0          107s
 NAME    READY   STATUS    RESTARTS   AGE
 myapp   1/1     Running   0          118s
 ```
+### rc cmd
+```
+akash@sky:~/Desktop/Devops_cloud_batch$ kubectl apply -f rc.yaml 
+replicationcontroller/ak-app created
+akash@sky:~/Desktop/Devops_cloud_batch$ kubectl get po
+NAME                                           READY   STATUS    RESTARTS     AGE
+ak-app-29tjs                                   1/1     Running   0            29s
+ak-app-6pqwq                                   1/1     Running   0            29s
+ak-app-bskpg                                   1/1     Running   0            29s
+ak-app-hkd99                                   1/1     Running   0            29s
+
+akash@sky:~/Desktop/Devops_cloud_batch$ kubectl get rc
+NAME     DESIRED   CURRENT   READY   AGE
+ak-app   4         4         4       3m33s
+```

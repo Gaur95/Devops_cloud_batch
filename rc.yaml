@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: ak-app
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     drink: coffee
   template:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: myappc
-          image: nginx
+          image: httpd
           ports:
             - containerPort: 80
