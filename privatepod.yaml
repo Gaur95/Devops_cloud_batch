@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypripod
+spec:
+  imagePullSecrets:
+    - name: myfinal
+  containers:
+    - image: aakashgaur57/blue  #private image
+      name: myprivcon
+      ports:
+      - containerPort: 80
