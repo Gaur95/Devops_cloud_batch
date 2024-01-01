@@ -1,6 +1,6 @@
 # Devops_cloud_batch
 ```
- ls
+ ls -l
    1 date
    2 cal
    3 mkdir hello
